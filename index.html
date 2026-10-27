@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pablo Cánovas | Software Developer & CV</title>
+  <meta name="description" content="Portfolio y trayectoria profesional de Pablo Cánovas. Desarrollador de software especializado en aplicaciones web modernas, arquitectura y soluciones escalables.">
+  <meta name="author" content="Pablo Cánovas">
+  
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pablo Cánovas | Software Developer">
+  <meta property="og:description" content="Portfolio y CV de Pablo Cánovas. Explora mi trayectoria, proyectos y habilidades.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Glow & Grid Decoration -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Inicio">
+        <span class="brand-code">&lt;</span>Pablo<span class="brand-accent">Cánovas</span><span class="brand-code">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+        <a href="#trayectoria" class="nav-link">Trayectoria</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contacto" class="btn btn-sm btn-primary nav-cta">Hablemos</a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Disponible para nuevos proyectos & oportunidades</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hola, soy <span class="gradient-text">Pablo Cánovas</span>
+            <span class="hero-subtitle">Desarrollador de Software & Creador Digital</span>
+          </h1>
+
+          <p class="hero-description">
+            Especializado en diseñar e implementar aplicaciones web modernas, robustas e interactivas. Convierto ideas complejas en interfaces intuitivas y sistemas eficientes con código limpio y escalable.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#proyectos" class="btn btn-primary">
+              <span>Ver Proyectos</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#trayectoria" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span>Ver Trayectoria / CV</span>
+            </a>
+            <a href="mailto:pacadi92@gmail.com" class="btn btn-glass" title="Enviar correo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+
+          <div class="hero-social">
+            <span class="social-label">Encuéntrame en:</span>
+            <div class="social-links">
+              <a href="https://github.com/Geloon" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub de Pablo Cánovas">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn de Pablo Cánovas">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:pacadi92@gmail.com" class="social-icon" aria-label="Email de Pablo Cánovas">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>pacadi92@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-header">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+              <span class="code-filename">PabloCanovas.ts</span>
+            </div>
+            <pre class="code-body"><code><span class="token-keyword">const</span> <span class="token-variable">developer</span> = {
+  <span class="token-property">nombre</span>: <span class="token-string">'Pablo Cánovas'</span>,
+  <span class="token-property">rol</span>: <span class="token-string">'Full-Stack Developer'</span>,
+  <span class="token-property">enfoque</span>: [
+    <span class="token-string">'Soluciones Escalables'</span>,
+    <span class="token-string">'Diseño Centrado en Usuario'</span>,
+    <span class="token-string">'Clean Code & Rendimiento'</span>
+  ],
+  <span class="token-property">disponibilidad</span>: <span class="token-boolean">true</span>,
+  <span class="token-method">construirSolucion</span>: (reto) => {
+    <span class="token-keyword">return</span> reto
+      .analizar()
+      .diseñar()
+      .optimizar();
+  }
+};</code></pre>
+            <div class="card-glass-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS HIGHLIGHT -->
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <span class="stat-number" data-target="100">100%</span>
+          <span class="stat-label">Compromiso y Pasión por el Código</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">+10</span>
+          <span class="stat-label">Tecnologías & Herramientas</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">Full-Stack</span>
+          <span class="stat-label">Frontend, Backend & APIs</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">Clean UI</span>
+          <span class="stat-label">Diseños Modernos y Responsivos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Presentación</span>
+          <h2 class="section-title">Sobre Mí</h2>
+          <p class="section-subtitle">Quién soy, cómo pienso y qué me impulsa a crear software.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card glass-panel">
+            <h3>Construyendo productos con propósito</h3>
+            <p>
+              Soy un desarrollador apasionado por crear aplicaciones funcionales, intuitivas y elegantes. Me motiva resolver problemas reales mediante código bien estructurado y metodologías ágiles.
+            </p>
+            <p>
+              Cuento con experiencia desarrollando desde interfaces de usuario reactivas hasta arquitecturas backend conectadas con APIs y bases de datos. Valoro enormemente la atención al detalle, la experiencia de usuario (UX/UI) y la optimización del rendimiento en cada entrega.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">⚡</span>
+                <div>
+                  <strong>Desarrollo Ágil</strong>
+                  <p>Iteración rápida con entregas funcionales y código modular.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🎯</span>
+                <div>
+                  <strong>Orientación al Detalle</strong>
+                  <p>Cuidado en accesibilidad, tipografía y feedback visual.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🚀</span>
+                <div>
+                  <strong>Aprendizaje Continuo</strong>
+                  <p>Siempre experimentando con las últimas tendencias tecnológicas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-sidebar">
+            <div class="glass-panel info-card">
+              <h4 class="info-card-title">Datos Rápidos</h4>
+              <ul class="info-list">
+                <li>
+                  <span class="info-key">Ubicación:</span>
+                  <span class="info-val">España (Disponible Remoto / Híbrido)</span>
+                </li>
+                <li>
+                  <span class="info-key">Especialidad:</span>
+                  <span class="info-val">Desarrollo Web & Aplicaciones</span>
+                </li>
+                <li>
+                  <span class="info-key">Idiomas:</span>
+                  <span class="info-val">Español (Nativo), Inglés</span>
+                </li>
+                <li>
+                  <span class="info-key">Estado:</span>
+                  <span class="info-val status-badge-inline">Abierto a proyectos</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="glass-panel quote-card">
+              <blockquote>
+                "El software bien diseñado no solo resuelve un problema, sino que hace que la experiencia sea placentera e intuitiva."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAYECTORIA & FORMACIÓN (TIMELINE) -->
+    <section class="section section-dark" id="trayectoria">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Evolución</span>
+          <h2 class="section-title">Trayectoria & Experiencia</h2>
+          <p class="section-subtitle">Mi camino profesional, formación académica y evolución técnica.</p>
+        </div>
+
+        <div class="timeline-tabs">
+          <button class="timeline-tab active" data-tab="experiencia">Experiencia Profesional</button>
+          <button class="timeline-tab" data-tab="educacion">Educación & Certificaciones</button>
+        </div>
+
+        <!-- Timeline: Experiencia -->
+        <div class="timeline-container active" id="tab-experiencia">
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-meta">
+                  <span class="timeline-role">Desarrollador de Software / Full-Stack</span>
+                  <span class="timeline-date">2023 - Presente</span>
+                </div>
+                <h4 class="timeline-company">Proyectos & Desarrollo Independiente</h4>
+                <p class="timeline-desc">
+                  Diseño y desarrollo integral de soluciones web, herramientas de gestión y plataformas interactivas. Arquitectura de frontend y backend, integración con APIs externas (REST / GraphQL), gestión de estado y despliegues continuos.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">JavaScript / TypeScript</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">React / Vue</span>
+                  <span class="tag">REST APIs</span>
+                  <span class="tag">Git & CI/CD</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-meta">
+                  <span class="timeline-role">Desarrollo de Aplicaciones & Herramientas Web</span>
+                  <span class="timeline-date">2021 - 2023</span>
+                </div>
+                <h4 class="timeline-company">Iniciativas Tecnológicas & Proyectos Web</h4>
+                <p class="timeline-desc">
+                  Construcción de dashboards, herramientas analíticas y gestores de datos en tiempo real. Enfoque prioritario en rendimiento de cliente, usabilidad y diseño responsive adaptado a cualquier dispositivo.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">HTML5 / CSS3</span>
+                  <span class="tag">PHP / MySQL</span>
+                  <span class="tag">APIs</span>
+                  <span class="tag">UI/UX Design</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-meta">
+                  <span class="timeline-role">Primeros Pasos & Fundamentos de Software</span>
+                  <span class="timeline-date">Inicios</span>
+                </div>
+                <h4 class="timeline-company">Aprendizaje Continuo & Retos Técnicos</h4>
+                <p class="timeline-desc">
+                  Inmersión en algoritmos, estructuras de datos y metodologías de ingeniería de software. Creación de scripts, automatizaciones y primeras aplicaciones orientadas a optimizar flujos de trabajo.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Algoritmia</span>
+                  <span class="tag">Bases de Datos</span>
+                  <span class="tag">Arquitectura de Software</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Timeline: Educación -->
+        <div class="timeline-container" id="tab-educacion">
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-meta">
+                  <span class="timeline-role">Desarrollo de Aplicaciones Web / Multiplataforma</span>
+                  <span class="timeline-date">Formación Continua</span>
+                </div>
+                <h4 class="timeline-company">Especialización Tecnológica</h4>
+                <p class="timeline-desc">
+                  Formación técnica intensiva en desarrollo de software, diseño de arquitecturas en capas, gestión de bases de datos relacionales y no relacionales, y buenas prácticas de desarrollo.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Ingeniería Web</span>
+                  <span class="tag">Bases de Datos</span>
+                  <span class="tag">Patrones de Diseño</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content glass-panel">
+                <div class="timeline-meta">
+                  <span class="timeline-role">Cursos & Certificaciones Online</span>
+                  <span class="timeline-date">Constante</span>
+                </div>
+                <h4 class="timeline-company">Plataformas Especializadas</h4>
+                <p class="timeline-desc">
+                  Actualización constante en ecosistemas modernos: frameworks JavaScript, microservicios, seguridad web, optimización SEO y automatización de despliegues.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Modern JS</span>
+                  <span class="tag">Cloud / DevOps</span>
+                  <span class="tag">Seguridad</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROYECTOS DESTACADOS -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Proyectos Destacados</h2>
+          <p class="section-subtitle">Una muestra de las aplicaciones que he construido, desde herramientas de gestión hasta aplicaciones web completas.</p>
+        </div>
+
+        <!-- Filtros de proyectos -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-btn" data-filter="frontend">Frontend / UI</button>
+          <button class="filter-btn" data-filter="tools">Herramientas & APIs</button>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Proyecto 1: Bracket Manager / StartGG -->
+          <article class="project-card glass-panel" data-category="fullstack tools">
+            <div class="project-banner">
+              <div class="project-badge">Destacado</div>
+              <div class="project-icon-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Full-Stack &middot; API Integration</span>
+              <h3 class="project-title">Bracket Manager (Start.gg)</h3>
+              <p class="project-description">
+                Gestor web para torneos competitivos con conexión directa a la API de start.gg. Incluye soporte de reglas oficiales (RPS, bans, BO3/BO5), panel de control para administradores y reporte de sets en tiempo real para competidores.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Start.gg API</span>
+                <span class="tech-tag">Backend API</span>
+                <span class="tech-tag">SPA</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Geloon" target="_blank" rel="noopener noreferrer" class="link-btn" title="Ver código en GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Código</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: Landing Page & Portfolio -->
+          <article class="project-card glass-panel" data-category="frontend">
+            <div class="project-banner banner-2">
+              <div class="project-icon-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Frontend &middot; Performance</span>
+              <h3 class="project-title">Personal CV & Portfolio Hub</h3>
+              <p class="project-description">
+                Sitio web personal y landing page interactiva con diseño responsive, microinteracciones, modo oscuro nativo, optimización SEO y despliegue automatizado con GitHub Pages.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5 Semantic</span>
+                <span class="tech-tag">CSS Grid & Flexbox</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">GitHub Pages</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Geloon/pablocanovas.github.io" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Repositorio</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: REST API & Backend Services -->
+          <article class="project-card glass-panel" data-category="fullstack tools">
+            <div class="project-banner banner-3">
+              <div class="project-icon-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Backend &middot; API</span>
+              <h3 class="project-title">Sistema de Autenticación & APIs</h3>
+              <p class="project-description">
+                Servicios modulares de backend con validación de datos, control de roles (administrador vs usuario), persistencia segura y endpoints optimizados para aplicaciones web.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express / PHP</span>
+                <span class="tech-tag">Bases de Datos</span>
+                <span class="tech-tag">JWT</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Geloon" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Explorar</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES / STACK TÉCNICO -->
+    <section class="section section-dark" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Stack & Herramientas</span>
+          <h2 class="section-title">Habilidades Técnicas</h2>
+          <p class="section-subtitle">Tecnologías, lenguajes y metodologías con las que trabajo en el día a día.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Frontend Card -->
+          <div class="skill-category glass-panel">
+            <div class="category-header">
+              <span class="category-icon">🎨</span>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-pill">HTML5 & Semántica</div>
+              <div class="skill-pill">CSS3 & Grid/Flexbox</div>
+              <div class="skill-pill">JavaScript (ES6+)</div>
+              <div class="skill-pill">TypeScript</div>
+              <div class="skill-pill">Diseño Responsive</div>
+              <div class="skill-pill">UI/UX & Animaciones</div>
+            </div>
+          </div>
+
+          <!-- Backend Card -->
+          <div class="skill-category glass-panel">
+            <div class="category-header">
+              <span class="category-icon">⚙️</span>
+              <h3>Backend & APIs</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-pill">Node.js</div>
+              <div class="skill-pill">RESTful APIs</div>
+              <div class="skill-pill">PHP / XAMPP</div>
+              <div class="skill-pill">Integración de APIs Externas</div>
+              <div class="skill-pill">Autenticación & Permisos</div>
+              <div class="skill-pill">Lógica de Servidor</div>
+            </div>
+          </div>
+
+          <!-- Bases de Datos & Datos -->
+          <div class="skill-category glass-panel">
+            <div class="category-header">
+              <span class="category-icon">🗄️</span>
+              <h3>Bases de Datos & Datos</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-pill">MySQL / MariaDB</div>
+              <div class="skill-pill">SQL Relacional</div>
+              <div class="skill-pill">JSON & Modelado</div>
+              <div class="skill-pill">Consultas Optimizadas</div>
+            </div>
+          </div>
+
+          <!-- Herramientas & Flujo -->
+          <div class="skill-category glass-panel">
+            <div class="category-header">
+              <span class="category-icon">🛠️</span>
+              <h3>Herramientas & Métodos</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-pill">Git & GitHub</div>
+              <div class="skill-pill">GitHub Pages</div>
+              <div class="skill-pill">VS Code / Entornos Dev</div>
+              <div class="skill-pill">Clean Code</div>
+              <div class="skill-pill">Resolución de Problemas</div>
+              <div class="skill-pill">Trabajo en Equipo</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="contact-box glass-panel">
+          <div class="contact-text">
+            <span class="section-tag">Contacto</span>
+            <h2 class="contact-title">¿Tienes un proyecto en mente o una propuesta?</h2>
+            <p class="contact-description">
+              Estoy siempre abierto a charlar sobre nuevas oportunidades, desarrollo de software, colaboraciones o simplemente compartir ideas técnicas.
+            </p>
+
+            <div class="contact-methods">
+              <a href="mailto:pacadi92@gmail.com" class="contact-item">
+                <div class="contact-icon-bubble">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Correo Electrónico</span>
+                  <strong class="contact-item-val">pacadi92@gmail.com</strong>
+                </div>
+              </a>
+
+              <a href="https://github.com/Geloon" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon-bubble">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">GitHub</span>
+                  <strong class="contact-item-val">github.com/Geloon</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <h3 class="form-title">Envíame un mensaje directo</h3>
+            
+            <div class="form-group">
+              <label for="name">Tu Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Ej. Ana Pérez" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Tu Correo Electrónico</label>
+              <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="4" placeholder="Cuéntame sobre tu proyecto o consulta..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Enviar Mensaje</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="brand-code">&lt;</span>Pablo<span class="brand-accent">Cánovas</span><span class="brand-code">/&gt;</span>
+        <p class="footer-copy">&copy; <span id="current-year">2026</span> Pablo Cánovas. Construido con código limpio & alojado en GitHub Pages.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="btn-top" aria-label="Volver arriba">
+          <span>Arriba</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
