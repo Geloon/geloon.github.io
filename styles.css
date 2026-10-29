@@ -354,6 +354,18 @@ button, input, textarea {
   letter-spacing: -0.02em;
   display: inline-flex;
   align-items: center;
+  gap: 0.15rem;
+  color: var(--text-main);
+  transition: all var(--transition-fast);
+}
+
+.nav-brand:hover {
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.nav-brand:hover .brand-code {
+  color: var(--primary-hover);
 }
 
 .brand-code {
@@ -1294,11 +1306,19 @@ button, input, textarea {
   letter-spacing: -0.02em;
   display: inline-flex;
   align-items: center;
+  gap: 0.15rem;
+  color: var(--text-main);
   width: fit-content;
+  transition: all var(--transition-fast);
 }
 
-.footer-brand:hover .brand-accent {
-  opacity: 0.85;
+.footer-brand:hover {
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.footer-brand:hover .brand-code {
+  color: var(--primary-hover);
 }
 
 .footer-copy {
