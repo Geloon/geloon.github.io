@@ -1288,6 +1288,19 @@ button, input, textarea {
   gap: 0.4rem;
 }
 
+.footer-brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.footer-brand:hover .brand-accent {
+  opacity: 0.85;
+}
+
 .footer-copy {
   font-size: 0.88rem;
   color: var(--text-muted);
